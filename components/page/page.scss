@@ -1,0 +1,89 @@
+    @charset "UTF-8";
+
+    @import 'themes/netcentric/netcentric';
+
+    body,
+    html {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      }
+      main {
+      max-width: 100%;
+      margin: auto auto auto 4%;
+      min-height: 100%;
+    }
+
+    body {
+      padding-bottom:60px;
+    }
+
+    h2 {
+      font-size: $font-size-headline-component-large;
+      color: $c-primary;
+      font-weight: $font-weight-regular;
+    }
+
+    th {
+      font-size: $font-size-table-header;
+      color: $c-primary;
+      font-weight: $font-weight-regular;
+    }
+
+    th:first-child {
+    width: 60%;
+    text-align: left;
+    }
+
+    th:second-child {
+    text-align: right;
+    }
+
+    th:last-child {
+    text-align: left;
+    padding-left: $horizontal-rythm-spacing-text;
+    }
+    .col-one-second1 {
+      width: 50%;
+      float: left;
+    }
+
+    .col-one-second2 {
+      width: 50%;
+      float: right;
+    }
+
+  .grid-container{
+        width: 100%;
+        max-width: 1300px;
+    }
+
+    /*-- our cleafix hack -- */
+    .row:before,
+    .row:after {
+        content:"";
+          display: table ;
+        clear:both;
+    }
+
+    [class*='col-'] {
+        float: left;
+        min-height: 1px;
+        width: 16.66%;
+        /*-- our gutter -- */
+        padding: 12px;
+    }
+
+    .col-1{ width: 16.66%; }
+    .col-2{ width: 33.33%; }
+    .col-3{ width: 49%; margin-right: 1%; }
+    .col-4{ width: 66.66%; }
+    .col-5{ width: 83.33%; }
+    .col-6{ width: 100%;   }
+    .column-full { width: 100%; }
+
+    h3 {
+  font-weight: $font-weight-bold;
+  padding-bottom: $vertical-rythm-spacing-text;
+  }

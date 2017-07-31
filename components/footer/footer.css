@@ -1,0 +1,16 @@
+footer {
+  background: linear-gradient(-22deg, #7b64e2 30%, #311b92 100%);
+  margin-top: 30px;
+  color: #fff;
+  font-weight: 600;
+}
+.footerLink {
+  display: inline-block;
+  color: transparent;
+  background-image: url("themes/netcentric/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  height: 38px;
+  margin: 10px -2% 10px 4%;
+}

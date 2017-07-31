@@ -1,0 +1,30 @@
+    @charset "UTF-8";
+
+    @import 'themes/netcentric/netcentric';
+
+    header {
+    @include theme-background;
+    height: 350px;
+    background-image: url($path-image-title-large), linear-gradient(-22deg, #7b64e2 30%, #311b92 100%);;
+    }
+
+    header {
+      color: white;
+      position: relative;
+    }
+
+    .pageHeadline {
+      font-size: $font-size-headline-primary-large;
+      color: $c-secondary;
+      font-weight: $font-weight-regular;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .homepageLink {
+      @include link-with-logo;
+      padding: $vertical-rythm-spacing-text;
+      margin: 0.5% 1% 0 4%;
+    }

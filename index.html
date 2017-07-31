@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+  <meta charset="UTF-8">
+  <title>Netcentric - Basket</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+ <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+ </head>
+<body>
+    <header>
+     <section class="pageHeader">
+      <a  class="homepageLink" href="http://netcentric.biz">Link to Netcentric Website</a>
+      <h1 class="pageHeadline">Expect sailing trips as well!</h1>
+    </section>
+    </header>
+      <main>
+    <nav>
+      <ul class="breadcrumb">
+        <li><a href="http://netcentric.biz">Home</a></li>
+        <li>Shopping for the annual sailing trip</li>
+      </ul>
+    </nav>
+    <div class="grid-container">
+    <div class="row">
+    <div class="col-4">
+      <h2>The Shop</h2>
+      <p>Ahoy landman! Pick what you need for the big trip. You gonna be out there some days, so better leave prepared.</p>
+      <p><strong>Please note: All prices are without <abbr title="Value Added Tax">VAT</abbr>!</strong></p>
+      <div class="grid-container">
+    <div class="row">
+      <div class="col-3 bordered">
+          <div>
+            <h3>Towel</h3>
+            <p>Sunny days and warm weather - you clearly need it after a refreshing jump into the cool sea.</p>
+          </div>
+          <div>
+            <p class="price">&euro;10</p>
+            <button class="removeButton add-to-cart specialClass" data-name="Towel" data-price="10.00">Add to cart</button>
+          </div>
+        </div>
+        <div class="col-3 bordered">
+          <div>
+            <h3>Enlightening book</h3>
+            <p>There&rsquo;s no rush out there. Take your time for a good read.</p>
+          </div>
+          <div>
+            <p class="price">&euro;5.99</p>
+            <button class="removeButton add-to-cart specialClass" data-name="Enlightening book" data-price="5.99">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 1%;">
+        <div class="col-3 bordered">
+          <div>
+            <h3>Waterproof camera</h3>
+            <p>Below the sea&rsquo;s surface, a hidden world. Don't miss out to bring those memories back home.</p>
+          </div>
+          <div>
+            <p class="price">&euro;49.99</p>
+            <button class="removeButton add-to-cart specialClass" data-name="Waterproof camera" data-price="49.99">Add to cart</button>
+          </div>
+        </div>
+        <div class="col-3 bordered">
+          <div>
+            <h3>Pinwheel</h3>
+            <p>Wondering what to do when there's only a light breeze? Back to your childhood!</p>
+          </div>
+          <div>
+            <p class="price">&euro;2.50</p>
+            <button class="removeButton add-to-cart specialClass" data-name="Pinwheel" data-price="2.50">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- End Shop Left -->
+  <div class="col-2">
+    <div id="section-shoppingcart">
+      <h2>Your boat's shopping cart</h2>
+      <!-- <p>&hellip;is empty.</p> -->
+      <form id="shoppingcart-form">
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="borderBottom">
+              <td colspan="5">
+                <div>
+            <ul id="show-cart" style="list-style: none;">
+                <li>???????</li>
+            </ul>
+        </div>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="5" class="text-align-right">
+                <ol  class="no-style">
+                  <li class="total-price">
+                    <label>Price before <abbr title="Value Added Tax">VAT</abbr>: </label>&euro;<span id="total-cart"></span>
+                    <output></output>
+                  </li>
+                  <li>
+                    <label><abbr title="Value Added Tax">VAT</abbr> @ <strong>20</strong>%: &euro;</label><span id="total-cart-vat-new"></span>
+                    <output></output>
+                  </li>
+                  <div class="under-line-vat"></div>
+                  <li>
+                    <label>Total to be paid: </label><span class="euro">&euro;</span><span id="total-cart-vat"></span>
+                  </li>
+                  <div class="under-line-total"></div>
+                </ol>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+        <div>
+          <p>
+            <em>Free shipping! We will fly your order to your boat with one of our Netcentric drones the moment you click that checkout button!</em>
+          </p>
+          <a class="continueShopping" href="#">Continue shopping</a> <em>or</em> <button class="quantityButton" id="btnSubmit" type="submit" form="shoppingcart-form" data-text-swap="Show">Proceed to Checkout</button>
+        </div>
+      </form>
+    </div>
+    </div>
+<!-- End shop right -->
+</div>
+</div>
+  </main>
+  <div style="clear:both;"></div>
+  <footer class="pageFooter">
+    <a class="footerLink" href="http://netcentric.biz">Link to Netcentric Website</a>
+    &copy; 2017
+  </footer>
+  <script src="components/shoppingcart/shoppingcart.js"></script>
+</body>
+</html>
